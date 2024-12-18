@@ -61,67 +61,113 @@
   height: 3000px;
   background: rgba(0, 0, 0);
 }
-#content .sec1 {
-  width: 90%;
+#content .sec {
+  max-width: 1600px;
+  padding: 50px 20px;
   margin: 0 auto;
-  height: 500px;
+  box-sizing: border-box;
 }
 #content .sec1 h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
-  padding: 100px 0;
+  padding: 20px 0 70px 0;
 }
 #content .sec1 span {
+  display: block;
   font-size: 2rem;
   color: #fff;
 }
 
 #content .sec1 p {
+  display: block;
   font-size: 1rem;
   color: #fff;
   padding-top: 100px;
-  /* text-align: justify; */
 }
-
+/* top */
 #content .brand_top {
   display: flex;
-  height: 1000px;
+  gap: 10px;
+  margin: 0 0 30px 0;
 }
 
 #content .brand_txt {
-  width: 33.33%;
+  flex: 2;
 }
 
 #content .brand_topimg {
-  margin-top: 100px;
-  width: 33.33%;
+  flex: 1;
 }
 
+#content .brand_topimg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+/* bottom */
 #content .brand_bot {
   display: flex;
-}
-
-#content .brand_bot .botimg_flex {
-  display: flex;
-  flex-direction: column;
-}
-
-#content .brand_bot .brand_botimg1,
-#content .brand_bot .brand_botimg2,
-#content .brand_bot .brand_botimg3 {
-  width: 25%;
+  gap: 10px;
+  margin-top: 50px;
 }
 
 #content .brand_bot .brand_botimg1 {
-  flex-grow: 2;
+  flex: 2;
 }
-
+#content .brand_bot .botimg_flex {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  flex-direction: column;
+}
 #content .brand_bot .brand_bottxt {
-  width: 25%;
+  flex: 1;
+  text-align: right;
 }
 
-#content .brand_bot img {
+.brand_bot .brand_botimg1 img,
+.brand_bot .brand_botimg2 img,
+.brand_bot .brand_botimg3 img {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+/* 모델 */
+#content .sec2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+#content .model_top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#content .model_top .modelimg1 {
+  width: 70%;
+}
+
+#content .model_top .modelimg2 {
+  width: 30%;
+}
+
+#content .model_bot {
+  display: flex;
+  gap: 20px;
+  aspect-ratio: 16/9;
+}
+
+#content .model_bot div {
+  width: 33.33%;
 }
 
 /* swiper */
