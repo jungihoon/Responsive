@@ -115,14 +115,15 @@ dd {
 }
 
 #headerArea {
-  /* position: fixed; 임시주석 */
+  position: fixed;
   z-index: 100;
   height: 100px;
 
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   left: 0;
   top: 0;
   width: 100%;
+  transition: all 0.5s;
 }
 
 #headerArea .headerInner {
@@ -149,9 +150,6 @@ dd {
 
 #headerArea #gnb {
   margin-top: 30px;
-}
-
-#headerArea #gnb ul {
 }
 
 #headerArea #gnb {
@@ -183,6 +181,18 @@ dd {
   font-size: 2em;
   padding: 30px 0;
   background: orange;
+}
+
+.topMove {
+  padding: 20px;
+  color: #fff;
+  background: #f00;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  z-index: 50;
+  bottom: 100px;
+  display: none;
 }
 
 /* 일반 pc */
