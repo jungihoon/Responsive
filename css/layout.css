@@ -278,6 +278,11 @@
 }
 
 /* Innovation */
+.sec4 h3 {
+  font-size: 4rem;
+  color: #fff;
+  padding: 20px 0 70px 0;
+}
 
 .sec4 .inno_wrap {
   display: grid;
@@ -288,6 +293,12 @@
 
 .sec4 .inno_wrap li {
   margin-bottom: 200px;
+}
+
+.sec4 .inno_wrap li p {
+  padding: 20px 0 0 0;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .sec4 .inno_wrap img {
