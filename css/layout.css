@@ -162,7 +162,15 @@
 #content .sec2 h3 {
   font-size: 4rem;
   color: #fff;
-  padding: 20px 0 70px 0;
+  padding: 20px 0 30px 0;
+}
+
+#content .sec > span {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  padding: 20px 0 0 0;
+  margin-bottom: 70px;
 }
 #content .sec2 .model_top {
   display: grid;
@@ -245,12 +253,11 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
+
 .swiper-slide p {
   color: #fff;
   text-align: justify;
@@ -265,8 +272,7 @@
   font-size: 2rem;
 }
 
-.swiper-slide:nth-child(1) strong,
-.swiper-slide:nth-child(2) strong {
+.swiper-slide strong {
   padding-bottom: 43px;
 }
 
@@ -307,8 +313,84 @@
   height: 100%;
   aspect-ratio: 4/3.5;
   object-fit: cover;
+  object-position: center;
 }
 
+/* gallery */
+.sec5 h3 {
+  color: #fff;
+  font-size: 5rem;
+  padding: 30px 0;
+}
+
+.sec5 .gallery_wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec5 .gallery_wrap li {
+  position: relative;
+  overflow: hidden;
+}
+
+.sec5 .gallery_wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "a a b b b"
+    "c d b b b"
+    "c e e f g"
+    "h e e i i";
+}
+
+.sec5 .gallery_wrap img {
+  border: 1px solid #000;
+}
+
+.sec5 .gallery_wrap li:nth-child(1) {
+  grid-area: a;
+}
+.sec5 .gallery_wrap li:nth-child(2) {
+  grid-area: b;
+}
+.sec5 .gallery_wrap li:nth-child(3) {
+  grid-area: c;
+}
+.sec5 .gallery_wrap li:nth-child(4) {
+  grid-area: d;
+}
+.sec5 .gallery_wrap li:nth-child(5) {
+  grid-area: e;
+}
+.sec5 .gallery_wrap li:nth-child(6) {
+  grid-area: f;
+}
+.sec5 .gallery_wrap li:nth-child(7) {
+  grid-area: g;
+}
+.sec5 .gallery_wrap li:nth-child(8) {
+  grid-area: h;
+}
+.sec5 .gallery_wrap li:nth-child(9) {
+  grid-area: i;
+}
+
+.sec5 .gallery_wrap li {
+  cursor: pointer;
+}
+.sec5 .gallery_wrap li img {
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
+
+.sec5 .gallery_wrap li:hover img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
 /* 일반 pc */
 @media screen and (max-width: 1280px) {
 }
