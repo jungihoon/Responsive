@@ -225,6 +225,7 @@
 #content .sec2 .model_top li:nth-child(1) dd {
   width: 40%;
 }
+
 #content .sec2 img {
   width: 100%;
   height: 100%;
@@ -397,16 +398,69 @@
 
 /* 테블릿 */
 @media screen and (max-width: 1024px) {
-  #content .sec1 {
-    background: brown;
+  /* Brand */
+  #content .sec1 .brand_top div:nth-child(2) {
+    display: none;
   }
-  #content .sec1 h3 {
-    font-size: 2rem;
+
+  #content .sec1 .brand_bot .botimg_flex {
+    display: none;
+  }
+  /* Model */
+  #content .sec2 .model_top {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a a"
+      "b c "
+      "d e";
+  }
+
+  /* Innovation */
+  #content .sec4 .inno_wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #content .sec4 .inno_wrap li:nth-child(3),
+  #content .sec4 .inno_wrap li:nth-child(8) {
+    display: none;
+  }
+
+  /* Gallery */
+  #content .sec5 .gallery_wrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "d b b b"
+      "f b b b"
+      "e e g h"
+      "e e i i";
+  }
+  #content .sec5 .gallery_wrap li:nth-child(1),
+  #content .sec5 .gallery_wrap li:nth-child(3) {
+    display: none;
   }
 }
 
 /* 소형 테블릿 */
 @media screen and (max-width: 768px) {
+  /* Model */
+  #content .sec2 .model_top {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+  }
+
+  /* Innovation */
+  #content .sec4 .inno_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #content .sec4 .inno_wrap li:nth-child(6),
+  #content .sec4 .inno_wrap li:nth-child(4) {
+    display: none;
+  }
 }
 
 /* 모바일 */
