@@ -17,7 +17,6 @@ var swiper = new Swiper('.service-swiper', {
     },
     1024: {
       slidesPerView: 3,
-      // 추가 설정 가능
     },
   },
   on: {
