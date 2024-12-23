@@ -8,9 +8,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo01.png" />
     <link rel="apple-touch-icon-precomposed" href="./app_icon.png" />
     <link rel="apple-touch-startup-image" href="./startup.png" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/layout.css" />
@@ -26,14 +33,6 @@
       <div class="videoBox">
         <video autoplay loop muted id="videoBG"></video>
         <img src="./images/back.jpg" id="imgBG" />
-        <div class="video-text-content">
-          <div class="video-text-content-inner">
-                <strong>The Rise of Adventure.</strong>
-                <p class="wb-type-copy owc-video-stage-content__description">Gemeinsam die schönsten Momente erleben. Mit Mercedes-Benz seid ihr sicher unterwegs und könnt die Feiertage in vollen Zügen genießen.&nbsp;</p>
-              </div>
-            </div>
-          </div>
-        </div>
         <a class="down" href="#">SCROLL DOWN</a>
       </div>
 
@@ -80,14 +79,25 @@
           <div class="brand_top">
             <div class="brand_txt">
               <h3>Brand</h3>
-              <span>Mercedes-Benz AG is responsible for global business of Mercedes-Benz Cars and Mercedes-Benz Vans with over 170,000 employees worldwide</span>
+              <span
+                >Mercedes-Benz AG is responsible for global business of Mercedes-Benz Cars and Mercedes-Benz Vans with over 170,000 employees
+                worldwide</span
+              >
               <p>
-                The company focuses on the development, production and sales of passenger cars,vans and services. Furthermore, the company aspires to leading in the fields of connectivity, automated driving and alternative drives with its forward-looking innovations. In addition to Mercedes-Benz,
-                the world's most valuable luxury automotive brand (source: Interbrand study, 21. Nov. 2023) Mercedes-AMG, Mercedes-Maybach and Mercedes me.
+                The company focuses on the development, production and sales of passenger cars,vans and services. FurtherLead, the company aspires to
+                Leading in the fields of connectivity, automated driving and alternative drives with its forward-looking innovations. In addition to
+                Mercedes-Benz, the world's most valuable luxury automotive brand (source: Interbrand study, 21. Nov. 2023) Mercedes-AMG,
+                Mercedes-Maybach and Mercedes me.
               </p>
+              <a href="#" class="more">Lead more</a>
             </div>
             <div class="brand_topimg"><img src="./images/brand1.png" alt="" /></div>
-            <div class="brand_topimg"><img src="./images/brand2.png" alt="" /></div>
+            <div class="brand_topimg">
+              <picture>
+                <source srcset="./images/brand1.png" media="(max-width: 768px)" />
+                <img src="./images/brand2.png" alt="" />
+              </picture>
+            </div>
           </div>
 
           <div class="brand_bot">
@@ -98,13 +108,12 @@
             </div>
             <div class="brand_bottxt">
               <p>
-                With Mercedes-Benz AG, the Group is one of the leading global suppliers of premium and luxury cars and vans. In 2023 it sold nearly 2.49 million vehicles. In its two business divisions, Mercedes-Benz AG is continually expanding its worldwide production network with around 35
-                production sites on four continents, while aligning itself to meet the requirements of electric mobility.
+                With Mercedes-Benz AG, the Group is one of the Leading global suppliers of premium and luxury cars and vans. In 2023 it sold nearly
+                2.49 million vehicles. In its two business divisions, Mercedes-Benz AG is continually expanding its worldwide production network with
+                around 35 production sites on four continents, while aligning itself to meet the requirements of electric mobility.
               </p>
             </div>
           </div>
-
-          <a href="#" class="more">MORE</a>
         </section>
 
         <!-- Model -->
@@ -115,60 +124,80 @@
             <li>
               <img src="./images/model1.png" alt="" />
               <dl>
-                <dt>G class</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur. In urna dignissim tortor amet volutpat tortor convallis massa. Arcu nunc viverra sed faucibus sit at tincidunt. Sed ornare velit eu curabitur mi vel. Nisl morbi diam diam duis.</dd>
+                <dt data-aos="fade-up" data-aos-duration="800">G class</dt>
+                <dd data-aos="fade-up" data-aos-duration="800">
+                  More powerful with EQ Technology, the new G 580 is a separate controlled electric motor located on each of the four wheels,
+                  delivering up to 587 hp of power. Check out the dynamic look of the G580 like G-Turn.
+                </dd>
               </dl>
             </li>
 
             <li>
               <img src="./images/model2.png" alt="" />
               <dl>
-                <dt>S class</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur. In urna dignissim tortor amet volutpat tortor convallis massa. Arcu nunc viverra sed faucibus sit at tincidunt. Sed ornare velit eu curabitur mi vel. Nisl morbi diam diam duis.</dd>
+                <dt data-aos="fade-up" data-aos-duration="800">S class</dt>
+                <dd data-aos="fade-up" data-aos-duration="800">
+                  Mercedes-Maybach GLS's design delivers ultimate luxury. Maybach's unique elegance is in harmony with the SUV, and the magnificent
+                  exterior creates an appearance worthy of its stature.
+                </dd>
               </dl>
             </li>
 
             <li>
               <img src="./images/model3.png" alt="" />
               <dl>
-                <dt>E class</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur. In urna dignissim tortor amet volutpat tortor convallis massa. Arcu nunc viverra sed faucibus sit at tincidunt. Sed ornare velit eu curabitur mi vel. Nisl morbi diam diam duis.</dd>
+                <dt data-aos="fade-up" data-aos-duration="800">E class</dt>
+                <dd data-aos="fade-up" data-aos-duration="800">
+                  It is a rear-wheel drive-based semi-large vehicle (E segment) produced by Mercedes-Benz. It shares MRA platform with four-door
+                  coupe, CLS, AMG GT 4-Door coupe. Derivatives include wagon-type estates, coupe, and cabriolets.
+                </dd>
               </dl>
             </li>
 
             <li>
               <img src="./images/model4.png" alt="" />
               <dl>
-                <dt>C class</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur. In urna dignissim tortor amet volutpat tortor convallis massa. Arcu nunc viverra sed faucibus sit at tincidunt. Sed ornare velit eu curabitur mi vel. Nisl morbi diam diam duis.</dd>
+                <dt data-aos="fade-up" data-aos-duration="800">C class</dt>
+                <dd data-aos="fade-up" data-aos-duration="800">
+                  The 190 is the predecessor of the code name W201 and uses the name C-Class from the second generation W202 released in 1993 by
+                  Mercedes-Benz to compete with the BMW 3 series, which was king of the segment at the time.
+                </dd>
               </dl>
             </li>
 
             <li>
               <img src="./images/model5.png" alt="" />
               <dl>
-                <dt>A class</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur. In urna dignissim tortor amet volutpat tortor convallis massa. Arcu nunc viverra sed faucibus sit at tincidunt. Sed ornare velit eu curabitur mi vel. Nisl morbi diam diam duis.</dd>
+                <dt data-aos="fade-up" data-aos-duration="800">A class</dt>
+                <dd data-aos="fade-up" data-aos-duration="800">
+                  The new front and rear design, dynamic spoke wheels, a radiator grill dedicated to AMG and AMG emblems complete the identity of the
+                  Mercedes-AMG luxury sedan, which is more elegant and unique than ever.
+                </dd>
               </dl>
             </li>
           </ul>
-          <a href="#" class="more">MORE</a>
+          <a href="#" class="more">Lead more</a>
         </section>
 
         <!-- Service -->
         <section class="sec sec3">
           <h3>Service</h3>
+          <span>Mercedes-Benz goes one step further to provide the best service for your vehicle.</span>
           <div class="swiper service-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1504306929/image.component.damq6.3458841047971.jpg/thumb.jpg" alt="" />
+                <img
+                  src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1504306929/image.component.damq6.3458841047971.jpg/thumb.jpg"
+                  alt="" />
                 <div class="txtBox">
                   <strong>House of Mercedes-Benz.</strong>
                   <p>Our exclusive collection brings the unmistakable luxury and style of Mercedes-Benz into your everyday life.</p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_2074746627/image.component.damq6.3403134886063.png/service-appointment-booking2-2.png" alt="" />
+                <img
+                  src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_2074746627/image.component.damq6.3403134886063.png/service-appointment-booking2-2.png"
+                  alt="" />
                 <div class="txtBox">
                   <strong>Service benefit program</strong>
                   <p>Register your vehicle from the age of 5 years and get 20% discount on selected services.</p>
@@ -176,39 +205,46 @@
               </div>
 
               <div class="swiper-slide">
-                <img src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1313400682/image.component.damq6.3412259272673.png/warranty_textmedia_4976352.png" alt="" />
+                <img
+                  src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1313400682/image.component.damq6.3412259272673.png/warranty_textmedia_4976352.png"
+                  alt="" />
                 <div class="txtBox">
                   <strong>Arrange a service date</strong>
                   <p>Book service, maintenance and other repairs easily with a Mercedes-Benz service partner nearby.</p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1081366243/image.component.damq6.3412259333017.jpg/warranty_stage_4756513.jpg" alt="" />
+                <img
+                  src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1081366243/image.component.damq6.3412259333017.jpg/warranty_stage_4756513.jpg"
+                  alt="" />
                 <div class="txtBox">
                   <strong>Online warranty extension</strong>
                   <p>The fastest way to your Mercedes-Benz warranty package.</p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1412912663/image.component.damq6.3445397970706.jpg/Service_Select_Stage_4000x3014.jpg" alt="" />
+                <img
+                  src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_1412912663/image.component.damq6.3445397970706.jpg/Service_Select_Stage_4000x3014.jpg"
+                  alt="" />
                 <div class="txtBox">
-                  <strong>Service and warranty packages</strong>
+                  <strong>Service packages</strong>
                   <p>Stay carefree with Mercedes-Benz service and warranty packages for service, maintenance and repair.</p>
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <img src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item/image.component.damq6.3403134669971.png/digital-extras-2.png" alt="" />
+                <img
+                  src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item/image.component.damq6.3403134669971.png/digital-extras-2.png"
+                  alt="" />
                 <div class="txtBox">
-                  <strong>Digital extras for your Mercedes</strong>
+                  <strong>Digital extras</strong>
                   <p>Simply book additional digital extras and experience your Mercedes-Benz in a new way.</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img
                   src="https://www.mercedes-benz.de/content/germany/de/passengercars/_jcr_content/root/responsivegrid/media_slider_copy_1934112366/media_slider_item_143347739/image.component.damq6.3349917610319.jpg/electric-intelligence-e-mobility-charging-services-charge-at-home-wallbox-2730x1536-12-2021.jpg"
-                  alt=""
-                />
+                  alt="" />
                 <div class="txtBox">
                   <strong>Mercedes-Benz Wallbox</strong>
                   <p>Home loading: easy, fast and convenient – the new Mercedes-Benz Wallbox.</p>
@@ -221,65 +257,62 @@
               <div class="swiper-button-prev"></div>
             </div>
           </div>
-          <a href="#" class="more">MORE</a>
+          <a href="#" class="more">Lead more</a>
         </section>
 
         <!-- innovation -->
         <section class="sec sec4">
           <h3>Innovation</h3>
-          <span>hover넣기</span>
-          <span>Learn about Mercedes-Benz's pioneering innovation and luxurious driving experience.</span>
+          <span>Lead about Mercedes-Benz's pioneering innovation and luxurious driving experience.</span>
 
           <ul class="inno_wrap">
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno1.png" alt="" />
               <p>MBUX Multimedia System</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno2.png" alt="" />
               <p>Driving assistance system</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno3.png" alt="" />
               <p>Over-the-Air Updata</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno4.png" alt="" />
               <p>Design car & Concept car</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno5.png" alt="" />
               <p>Mercedes-Benz electric car</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno6.png" alt="" />
               <p>Air circulation system</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno7.png" alt="" />
               <p>ESG</p>
             </li>
 
-            <li class="inno_img">
+            <li class="inno_img" data-aos="fade-up" data-aos-duration="800">
               <img src="./images/inno8.png" alt="" />
               <p>Immersive Sound by Mercedes-Benz​</p>
             </li>
           </ul>
-          <a href="#" class="more">MORE</a>
+          <a href="#" class="more">Lead more</a>
         </section>
 
         <!-- Gallery -->
         <section class="sec sec5">
           <h3>Gallery</h3>
-          <span>흑백사진에서 hover 컬러</span>
           <span>Mercedes-Benz is tradition and care. Yesterday as today. And also in the future. </span>
-
           <ul class="gallery_wrap">
             <li><img src="./images/gallery1.png" alt="" /></li>
             <li><img src="./images/gallery2.png" alt="" /></li>
@@ -291,6 +324,7 @@
             <li><img src="./images/gallery8.png" alt="" /></li>
             <li><img src="./images/gallery9.png" alt="" /></li>
           </ul>
+          <a href="#" class="more">Lead Lead</a>
         </section>
       </article>
 
@@ -308,7 +342,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/video.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

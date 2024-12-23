@@ -93,12 +93,30 @@
 #content section {
   position: relative;
 }
+#content .sec h3 {
+  font-size: 4rem;
+  color: #fff;
+  padding: 20px 0 30px 0;
+}
 #content .more {
   position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.5rem;
+  right: 30px;
+  top: 115px;
+  font-size: 1.1rem;
   color: #fff;
+}
+
+#content .more::after {
+  content: "";
+  position: relative;
+  top: 4px;
+  left: 12px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/arrow.png.png);
+  background-size: 20px 20px;
+  filter: invert(1);
 }
 
 #content .sec {
@@ -106,11 +124,6 @@
   padding: 50px 20px;
   margin: 0 auto;
   box-sizing: border-box;
-}
-#content .sec1 h3 {
-  font-size: 4rem;
-  color: #fff;
-  padding: 20px 0 70px 0;
 }
 
 #content .sec1 h3:nth-child(2) {
@@ -137,6 +150,7 @@
 
 #content .brand_txt {
   flex: 2;
+  position: relative;
 }
 
 #content .brand_topimg {
@@ -182,16 +196,12 @@
 }
 
 #content .sec1 .more {
-  top: 110px;
-  left: 300px;
+  top: 65px;
+  right: 0;
+  width: 135px;
 }
 
 /* 모델 */
-#content .sec2 h3 {
-  font-size: 4rem;
-  color: #fff;
-  padding: 20px 0 30px 0;
-}
 
 #content .sec > span {
   display: block;
@@ -206,8 +216,8 @@
   grid-auto-rows: 1fr;
   gap: 15px;
   grid-template-areas:
-    'a a b'
-    'c d e';
+    "a a b"
+    "c d e";
 }
 #content .sec2 .model_top li {
   position: relative;
@@ -282,6 +292,7 @@
   margin: 20px 0 0 0;
 }
 .service-swiper .swiper-slide strong {
+  display: block;
   width: 100%;
   font-weight: 500;
   color: #fff;
@@ -395,10 +406,10 @@
 
   gap: 10px;
   grid-template-areas:
-    'a a b b b'
-    'c d b b b'
-    'c e e f g'
-    'h e e i i';
+    "a a b b b"
+    "c d b b b"
+    "c e e f g"
+    "h e e i i";
 }
 
 .sec5 .gallery_wrap img {
@@ -449,10 +460,40 @@
 
 /* 테블릿 */
 @media screen and (max-width: 1024px) {
+  #content .sec1 span {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0px 30px 0 0;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  #content .sec1 .more {
+    right: 0;
+  }
+
+  #content .brand_bot .brand_botimg1 img {
+    aspect-ratio: 16/9;
+    object-fit: fill;
+  }
+
+  #content .sec > span {
+    font-size: 1.4rem;
+  }
+
+  #content .service-swiper .swiper-slide strong {
+    font-size: 1.4rem;
+  }
+
+  #content .sec1 p {
+    padding-top: 50px;
+  }
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
+
   /* Brand */
   #content .sec1 .brand_top div:nth-child(2) {
     display: none;
@@ -465,9 +506,9 @@
   #content .sec2 .model_top {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      'a a'
-      'b c '
-      'd e';
+      "a a"
+      "b c "
+      "d e";
   }
 
   /* Innovation */
@@ -479,14 +520,18 @@
     display: none;
   }
 
+  .sec4 .inno_wrap li p {
+    font-size: 1.2rem;
+  }
+
   /* Gallery */
   #content .sec5 .gallery_wrap {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      'd b b b'
-      'f b b b'
-      'e e g h'
-      'e e i i';
+      "d b b b"
+      "f b b b"
+      "e e g h"
+      "e e i i";
   }
   #content .sec5 .gallery_wrap li:nth-child(1),
   #content .sec5 .gallery_wrap li:nth-child(3) {
@@ -496,6 +541,37 @@
 
 /* 소형 테블릿 */
 @media screen and (max-width: 768px) {
+  #content .sec h3 {
+    font-size: 3rem;
+  }
+
+  #content .brand_top {
+    flex-direction: column;
+  }
+
+  #content .brand_topimg img {
+    aspect-ratio: 16/9;
+  }
+
+  #content .brand_bot .brand_botimg1 {
+    display: none;
+  }
+  #content .sec1 p {
+    text-align: left;
+  }
+  #content .sec1 .more {
+    right: 0;
+  }
+
+  #content .sec1 p {
+    padding: 0;
+  }
+
+  #content .more {
+    top: 100px;
+    font-size: 1rem;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
@@ -526,14 +602,40 @@
   }
 
   /* Model */
+
+  #content .sec > span {
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  #content .sec2 .model_top li dd {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  #content .sec2 .model_top li:nth-child(1) dd {
+    width: 100%;
+  }
+
+  /* #content .sec2:nth-child(2) img,
+  #content .sec2:nth-child(3) img,
+  #content .sec2:nth-child(4) img,
+  #content .sec2:nth-child(5) img {
+    height: 50px;
+  } */
+
+  #content .sec2 img {
+    height: 100%;
+  }
+
   #content .sec2 .model_top {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-      'a'
-      'b'
-      'c'
-      'd'
-      'e';
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
   }
 
   /* Innovation */
