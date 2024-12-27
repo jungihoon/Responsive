@@ -56,9 +56,7 @@ a:link {
   text-decoration: none;
   display: block;
 }
-a:visited {
-  color: #333;
-}
+
 a:hover,
 a:active {
   color: #333;
@@ -119,7 +117,7 @@ dd {
   z-index: 100;
   height: 100px;
 
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.4);
   left: 0;
   top: 0;
   width: 100%;
@@ -127,14 +125,17 @@ dd {
 }
 
 #headerArea .headerInner {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1560px;
+  overflow: hidden;
+  width: 82%;
   margin: 0 auto;
 }
 
 #headerArea h1 {
-  margin-top: 15px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
 }
 
 #headerArea h1 a {
@@ -148,7 +149,17 @@ dd {
   margin-right: 355px;
 }
 
+#headerArea .menuOpen {
+  font-size: 2em;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: none;
+}
+
 #headerArea #gnb {
+  float: left;
   margin-top: 30px;
 }
 
@@ -169,8 +180,13 @@ dd {
   text-decoration: none;
 }
 
+#headerArea #gnb .close {
+  display: none;
+}
+
 #headerArea .user {
   margin-top: 30px;
+  float: right;
   color: #fff;
 }
 
@@ -191,7 +207,7 @@ dd {
 }
 
 #footerArea .footer_txt p {
-  margin-top: 150px;
+  margin-top: 100px;
   font-size: 7rem;
   color: #fff;
   font-weight: 500;
@@ -203,7 +219,6 @@ dd {
 .topMove {
   padding: 20px;
   color: #fff;
-  background: #f00;
   border-radius: 50%;
   position: fixed;
   right: 20px;
@@ -214,11 +229,76 @@ dd {
 
 /* 일반 pc */
 @media screen and (max-width: 1280px) {
+  #headerArea .headerInner {
+    width: 94%;
+  }
 }
 
 /* 테블릿 */
 @media screen and (max-width: 1024px) {
   /* 헤더 */
+  #headerArea .headerInner {
+    width: 100%;
+    margin: 0;
+    overflow: visible;
+  }
+  #headerArea h1 {
+    position: relative;
+    left: 50%;
+  }
+  #headerArea h3 .user {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
+  #headerArea .menuOpen {
+    display: block;
+  }
+  .box {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  #headerArea #gnb {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    margin-top: 0;
+    background: #000;
+    opacity: 0;
+  }
+  #headerArea #gnb ul {
+    float: none;
+    width: auto;
+    padding-top: 80px;
+  }
+  #headerArea #gnb ul li {
+    float: none;
+    width: auto;
+    text-align: center;
+    line-height: 3em;
+    margin: 0;
+  }
+  #headerArea #gnb ul li a {
+    font-size: 1.5em;
+    padding: 10px 0;
+    transition: all 0.5s;
+  }
+  #headerArea #gnb ul li a:hover {
+    background: #fff;
+    color: #000;
+  }
+  #headerArea #gnb .close {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 2em;
+  }
 
   /* 푸터 */
   #footerArea .footer_txt p {
@@ -237,6 +317,10 @@ dd {
 
 /* 모바일 */
 @media screen and (max-width: 640px) {
+  #footerArea .footer_txt p {
+    font-size: 3.5rem;
+    margin-top: 50px;
+  }
 }
 
 /* 최소 사이즈 처리 */

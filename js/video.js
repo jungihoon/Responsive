@@ -8,16 +8,16 @@ $(document).ready(function () {
 
     $('#content').css('margin-top', screenHeight);
 
-    if (screenSize > 768 && current == false) {
+    if (screenSize > 1024 && current == false) {
       $('#videoBG').show();
       $('#videoBG').attr('src', './images/mainVideo.mp4');
       $('#imgBG').hide();
       current = true;
     }
-    if (screenSize <= 768) {
-      $('#videoBG').show();
-      $('#videoBG').attr('src', './images/ending.mp4');
-      // $('#imgBG').show();
+    if (screenSize <= 1024) {
+      $('#videoBG').hide();
+      $('#videoBG').attr('src', '');
+      $('#imgBG').show();
       current = false;
     }
   }
