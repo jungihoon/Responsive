@@ -1,14 +1,14 @@
-var swiper = new Swiper('.service-swiper', {
+var swiper = new Swiper(".service-swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     768: {
