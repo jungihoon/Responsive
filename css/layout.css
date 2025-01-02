@@ -27,7 +27,7 @@
   min-width: 100%; /*동영상 너비를 꽉차게*/
   height: auto;
   min-height: 100%; /*동영상 높이를 꽉차게*/
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%);
   z-index: -100;
   display: none;
 }
@@ -664,6 +664,7 @@
   #content .sec4 .inno_wrap li:nth-child(4) {
     display: none;
   }
+
   .sec4 .inno_wrap li {
     margin-bottom: 80px;
   }
@@ -671,7 +672,9 @@
   /* Gallery */
   #content .sec5 .gallery_wrap {
     grid-template-columns: repeat(2, 1fr);
+
     grid-template-rows: repeat(4, 0.4fr);
+
     grid-template-areas:
       "e e"
       "b b"
