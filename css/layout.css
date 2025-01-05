@@ -1,3 +1,8 @@
+:root {
+  --font-title: "MBCorpo Title", "DaimlerCAC-Regular", "DaimlerCACArab-Regular", serif;
+  --font-text: "DaimlerCS-Regular", "DaimlerCSArab-Regular", sans-serif;
+  --font-text-bold: "MBCorpo Text", "DaimlerCS-Regular", "DaimlerCSArab-Regular", sans-serif;
+}
 /* 와이드 pc  */
 
 .videoBox {
@@ -94,6 +99,7 @@
   position: relative;
 }
 #content .sec h3 {
+  font-family: var(--font-title);
   font-size: 4rem;
   color: #fff;
   padding: 20px 0 30px 0;
@@ -120,7 +126,7 @@
 }
 
 #content .sec {
-  max-width: 1600px;
+  max-width: 2100px;
   padding: 50px 20px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -131,6 +137,11 @@
 }
 #content .sec1 span {
   display: block;
+  -webkit-font-smoothing: antialiased;
+  font: inherit;
+  font-family: var(--wb-font-title);
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.95rem;
   color: #fff;
   word-break: break-all;
@@ -155,7 +166,9 @@
 
 #content .brand_txt > p {
   padding-top: 160px;
-  font-size: 1.25rem;
+  font-family: DaimlerCACArab-Regular;
+
+  font-size: 1.4rem;
 }
 
 #content .brand_topimg {
