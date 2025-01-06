@@ -114,6 +114,7 @@ dd {
 }
 
 #wrap > img {
+  width: 100%;
   margin: 0 auto;
   object-fit: cover;
 }
@@ -207,6 +208,7 @@ dd {
 
 #footerArea .footer_txt {
   max-width: 2100px;
+  width: 84%;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;

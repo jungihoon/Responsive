@@ -22,11 +22,11 @@ $(document).ready(function () {
 
     $("#content").css("margin-top", screenHeight);
 
-    // if (screenSize > 768) {
-    //   $("#imgBG").attr("src", "./images/sub" + value + "_big.jpg");
-    // } else {
-    //   $("#imgBG").attr("src", "./images/sub" + value + "_small.jpg");
-    // }
+    if (screenSize > 1024) {
+      $("#imgBG").attr("src", "../sub" + value + "/image/sub_big.jpg");
+    } else {
+      $("#imgBG").attr("src", "../sub" + value + "/image/sub_small.jpg");
+    }
   }
 
   screen_size(); //최초 실행시 호출
