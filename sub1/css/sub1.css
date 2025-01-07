@@ -233,7 +233,9 @@
   transform: translateY(270%);
   transition: all 0.5s ease-out;
 }
-.history ul li img{transition: all 0.5s ease-out;} 
+.history ul li img {
+  transition: all 0.5s ease-out;
+}
 .history ul li:hover img {
   transform: scale(1.1);
 }
@@ -307,18 +309,32 @@
     display: none;
   }
 
-  .history .history_box figcaption .heading{display: none;}
+  .history .history_box figcaption .heading {
+    display: none;
+  }
   .history > ul > li:hover::before {
     content: "";
     display: none;
   }
-  .history .history_box figcaption > ul{position: static;}
-  .history .history_box figcaption li{transform: translateY(0);}
-  .history figcaption .heading_txt{position: static; opacity: 1; border: none;font-size: 0.8rem;}
-  .history ul li:hover img {transform: scale(1);}
-  .history .history_box img{border-radius: 30px;margin-bottom: 20px;}
-
-
+  .history .history_box figcaption > ul {
+    position: static;
+  }
+  .history .history_box figcaption li {
+    transform: translateY(0);
+  }
+  .history figcaption .heading_txt {
+    position: static;
+    opacity: 1;
+    border: none;
+    font-size: 0.8rem;
+  }
+  .history ul li:hover img {
+    transform: scale(1);
+  }
+  .history .history_box img {
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 /* 소형 테블릿 */
