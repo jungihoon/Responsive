@@ -110,20 +110,36 @@
 .sec .sec_list .txt_box .sub_txtbox {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 40px;
 }
 .sec .sec_list .txt_box .sub_txtbox span {
   padding: 5px 15px;
 }
 .sec .sec_list .txt_box .sub_txt {
+  display: block;
+  width: 25%;
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
   opacity: 0;
-  transition: all 0.5s ease-out;
   border: 1px solid #fff;
   border-radius: 50px;
+  white-space: nowrap;
+  transition: all 1.5s;
+}
+
+.sec .sec_list .txt_box .sub_bot {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sec .sec_list .txt_box .sub_bot span {
+}
+.sec .sec_list .txt_box .sub_txtbot {
+  width: 25%;
+  height: 100%;
 }
 
 .sec .sec_list li:hover .sub_txt {
@@ -132,7 +148,7 @@
 
 .sec .sec_list li {
   width: 25%;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
 }
@@ -175,6 +191,77 @@
   object-fit: cover;
   object-position: center;
   transition: all 0.5s ease-out;
+}
+/* luxury */
+
+.luxury .luxury_box {
+  width: 100%;
+  height: ;
+}
+.luxury .luxury_top {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a e e"
+    "c d b";
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.luxury .luxury_top {
+}
+
+.luxury .luxury_top li:nth-child(1) {
+  grid-area: a;
+  /* aspect-ratio: 3/1; */
+}
+
+.luxury .luxury_top li:nth-child(2) {
+  grid-area: b;
+}
+
+.luxury .luxury_top li:nth-child(3) {
+  grid-area: c;
+}
+
+.luxury .luxury_top li:nth-child(4) {
+  grid-area: d;
+}
+.luxury .luxury_top li:nth-child(5) {
+  grid-area: e;
+}
+
+.luxury .luxury_top li:nth-child(5) span {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+}
+.luxury img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* amg */
+.luxury_box .amg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.luxury_box .amg .amg_txt {
+  width: 50%;
+}
+
+.luxury_box .amg .amg_txt p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.luxury_box .amg .amg_img {
+  margin-right: 100px;
 }
 
 /* 일반 pc */
