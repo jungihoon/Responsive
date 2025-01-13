@@ -74,9 +74,10 @@
 }
 
 #content h3 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 40px;
 }
 
 #content .sec > span {
@@ -220,6 +221,9 @@
 
 .luxury .amg span {
   padding: 20px;
+  font-size: 3.2rem;
+  text-align: justify;
+  word-break: break-all;
 }
 
 .luxury .amg li:nth-child(1) {
@@ -244,8 +248,10 @@
 .luxury .amg li:nth-child(5) span {
   display: block;
   color: #fff;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: justify;
+  word-break: break-all;
 }
 
 .luxury img {
@@ -308,8 +314,9 @@
 .luxury .maybach li:nth-child(5) span {
   display: block;
   color: #fff;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 0px 85px 0 20px;
 }
 
 /* classic */
@@ -365,22 +372,25 @@
 .luxury .concept li:nth-child(6) span {
   display: block;
   color: #fff;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  word-break: break-all;
 }
 
 /* 빵꾸 */
 #content .luxury {
   padding-bottom: 195px;
 }
+.hole {
+  background: rgba(0, 0, 0, 0.2);
+}
 .hole .hole_bg {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 2000px;
+  width: 100%;
   height: 500px;
   padding: 0 5%;
-  background: rgba(0, 0, 0, 0.2);
 }
 .hole .hole_bg strong {
   color: #fff;
@@ -480,7 +490,13 @@
 
 /* 소형 테블릿 */
 @media screen and (max-width: 768px) {
+  .hole {
+    display: none;
+  }
   /* benz */
+  .sec .sec_list {
+    height: 130vh;
+  }
   .sec .sec_list li {
     width: 100%;
     height: 250px;
