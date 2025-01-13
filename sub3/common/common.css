@@ -89,11 +89,7 @@ address {
   font-style: normal;
   font-weight: normal;
 }
-p,
-li,
-dd {
-  line-height: 1.5em;
-}
+
 .hidden,
 #skipNav {
   display: block;

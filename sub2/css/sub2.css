@@ -248,7 +248,7 @@
 .luxury .amg li:nth-child(5) span {
   display: block;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   text-align: justify;
   word-break: break-all;
@@ -314,7 +314,7 @@
 .luxury .maybach li:nth-child(5) span {
   display: block;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   padding: 0px 85px 0 20px;
 }
