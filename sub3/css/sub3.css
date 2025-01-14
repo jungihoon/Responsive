@@ -78,7 +78,6 @@
   color: #fff;
   font-size: 4rem;
   font-weight: 600;
-  white-space: nowrap;
 }
 .service p {
   display: block;
@@ -97,9 +96,13 @@
   margin: 0 auto;
 }
 
+.flex_row {
+  flex-direction: row-reverse;
+}
+
 .service .service_flex img {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
   object-fit: cover;
   object-position: center;
 }
@@ -192,19 +195,44 @@
   display: none;
 }
 
-.service .service_grid li:nth-child(2) .ser_txt {
+.service .service_grid li.ser_txt {
   width: 50%;
 }
 /* 일반 pc */
 @media screen and (max-width: 1280px) {
+  .service span {
+    font-size: 2.3rem;
+  }
+  .service p {
+    font-size: 1.2rem;
+  }
+
+  .service .service_flex img {
+    width: 680px;
+    height: 350px;
+  }
 }
 
 /* 테블릿 */
 @media screen and (max-width: 1024px) {
+  .service span {
+    font-size: 2rem;
+  }
+  .service .service_flex img {
+    width: 460px;
+    height: 350px;
+  }
 }
 
 /* 소형 테블릿 */
 @media screen and (max-width: 768px) {
+  .service .service_flex {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .service .service_flex img {
+    width: 100%;
+  }
 }
 
 /* 모바일 */
