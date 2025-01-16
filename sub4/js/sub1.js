@@ -1,34 +1,13 @@
-const swiper = new Swiper(".service-swiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+const textElements = gsap.utils.toArray("#inc01 .b_txt");
+textElements.forEach((text) => {
+  gsap.to(text, {
+    backgroundSize: "100%",
+    ease: "none",
+    scrollTrigger: {
+      trigger: text,
+      start: "center 90%",
+      end: "center 70%",
+      scrub: true,
     },
-    1024: {
-      slidesPerView: 3,
-    },
-    1280: {
-      slidesPerView: 3,
-    },
-  },
-  on: {
-    breakpoint: function (swiper, breakpoint) {
-      if (breakpoint >= 768) {
-        swiper.navigation.disable();
-      } else {
-        swiper.navigation.enable();
-      }
-    },
-  },
+  });
 });

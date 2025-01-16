@@ -1,3 +1,8 @@
+:root {
+  --font-title: "MBCorpo Title", "DaimlerCAC-Regular", "DaimlerCACArab-Regular", serif;
+  --font-text: "DaimlerCS-Regular", "DaimlerCSArab-Regular", sans-serif;
+  --font-text-bold: "MBCorpo Text", "DaimlerCS-Regular", "DaimlerCSArab-Regular", sans-serif;
+}
 /* 와이드 pc  */
 
 .videoBox {
@@ -70,130 +75,61 @@
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.9);
 }
-.service_sec {
-  margin: 0 auto;
-}
-.service span {
-  display: block;
-  color: #fff;
+.sec4 h3 {
   font-size: 4rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-.service p {
-  display: block;
-  margin-top: 50px;
   color: #fff;
-  font-size: 1.8rem;
-  line-height: ;
-  text-align: justify;
-  word-break: break-all;
+  padding: 20px 0 70px 0;
 }
 
-.service .service_flex {
-  display: flex;
-  gap: 60px;
-  justify-content: space-between;
-  margin: 0 auto;
+.sec4 .inno_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 25px;
 }
 
-.service .service_flex img {
-  width: 50%;
+.sec4 .inno_wrap li {
+  margin-bottom: 200px;
+}
+
+.sec4 .inno_wrap li p {
+  padding: 20px 0 0 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.sec4 .inno_wrap img {
+  display: block;
+  width: 100%;
   height: 100%;
+  aspect-ratio: 4/3.5;
   object-fit: cover;
   object-position: center;
 }
 
-.service .service_grid {
-  display: grid;
+/* test */
+#inc01 {
+  background: rgba(0, 0, 0, 0.9);
 }
 
-.service .service_grid li {
-  margin-top: 150px;
-}
-
-/* swiper */
-
-.sec3 span {
-  display: block;
-  color: #fff;
-  font-size: 2rem;
-  padding: 30px 0;
-}
-
-.service-swiper {
-  width: 100%;
-  height: 100%;
-}
-.service-swiper .swiper-wrapper {
-  max-width: 1600px;
-  padding: 0 0 50px 0;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.service-swiper .swiper-slide .txtBox {
-  margin: 20px 0 0 0;
-}
-.service-swiper .swiper-slide strong {
-  display: block;
-  width: 100%;
+#inc01 .big_txt {
+  position: relative;
+  padding: 0 0 300px 50px;
+  font-size: 5.5rem;
   font-weight: 500;
-  color: #fff;
-  font-size: 2rem;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
 }
 
-.service-swiper .swiper-slide p {
-  display: block;
-  margin: 10px 10px 0 0;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.3;
-  word-break: break-all;
-}
-
-.service-swiper .swiper-slide strong {
-  padding-bottom: 43px;
-}
-
-.service-swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.service-swiper-nav .swiper-pagination-bullet {
-  background: #eee;
-}
-
-.service-swiper-nav .swiper-button-next,
-.service-swiper-nav .swiper-button-prev {
-  top: 30%;
-  height: 3rem;
-  width: 3rem;
-  border: 1px solid transparent;
-  border-radius: 100%;
-  font-size: 0;
-  line-height: 0;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #000;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 1.2rem;
-  font-weight: 900;
-}
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  display: none;
-}
-
-.service .service_grid li:nth-child(2) .ser_txt {
-  width: 50%;
+#inc01 .big_txt .b_txt {
+  position: relative;
+  width: max-content;
+  background: linear-gradient(to right, #fff, #fff) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+  font-family: var(--font-title);
 }
 /* 일반 pc */
 @media screen and (max-width: 1280px) {
