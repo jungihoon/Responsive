@@ -10,7 +10,7 @@ PC 전용 웹, 모바일 웹, 반응형 웹 입니다.<br>
 - React SPA(Korail)
   - https://react-project-9360a.web.app/
 - 프로필 및 포트폴리오 링크
-  - http://kkwoou.mycafe24.com/profile/
+  - 빈칸
 
 ## PC WEB
 
