@@ -399,8 +399,8 @@
 }
 
 .hole2 .hole_bg {
-  width: 2000px;
-  height: 300px;
+  /* width: 2000px; */
+  height: 450px;
   background: rgba(0, 0, 0, 0.2);
 }
 /* 일반 pc */

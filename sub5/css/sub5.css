@@ -1,0 +1,222 @@
+:root {
+  --font-title: "MBCorpo Title", "DaimlerCAC-Regular", "DaimlerCACArab-Regular", serif;
+  --font-text: "DaimlerCS-Regular", "DaimlerCSArab-Regular", sans-serif;
+  --font-text-bold: "MBCorpo Text", "DaimlerCS-Regular", "DaimlerCSArab-Regular", sans-serif;
+}
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+#wrap .visual_txt {
+  position: absolute;
+  top: 74%;
+  left: 8.8%;
+}
+
+#wrap .visual_txt span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+#wrap .visual_txt p {
+  font-size: 1.1rem;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.down {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -90px;
+  bottom: 20%;
+  animation: ani 1s infinite alternate;
+}
+@keyframes ani {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #888;
+  }
+}
+
+#content {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+#content .sec {
+  padding: 150px 20px 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.9);
+}
+#content .sec > span {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  padding: 20px 0 0 0;
+  margin-bottom: 70px;
+}
+.gallery_sec h3 {
+  color: #fff;
+  font-size: 5rem;
+  padding: 30px 0;
+}
+.gallery_sec .gallery_wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px; /* 갭을 좀 더 넓게 설정 */
+  grid-template-columns: repeat(5, 1fr); /* 5개의 컬럼 */
+  grid-template-areas:
+    "a a b b b"
+    "c d b b b"
+    "c e e f g"
+    "h e e i i"; /* 마지막 행에만 여유 공간을 설정 */
+}
+
+.gallery_sec .gallery_wrap li {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 가운데 정렬 */
+}
+
+.gallery_sec .gallery_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율을 유지하며 영역을 채움 */
+  border-radius: 20px;
+  display: block;
+  transition: all 0.5s ease-out;
+  filter: grayscale(1);
+}
+
+.gallery_sec .gallery_wrap li:hover {
+  box-shadow: 1px 1px 10px 1px rgba(158, 29, 243, 0.8);
+}
+
+.gallery_sec .gallery_wrap li:hover img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+/* 각 아이템 위치 지정 */
+.gallery_sec .gallery_wrap li:nth-child(1) {
+  grid-area: a;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(2) {
+  grid-area: b;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(3) {
+  grid-area: c;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(4) {
+  grid-area: d;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(5) {
+  grid-area: e;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(6) {
+  grid-area: f;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(7) {
+  grid-area: g;
+}
+
+.gallery_sec .gallery_wrap li:nth-child(8) {
+  grid-area: h;
+}
+.gallery_sec .gallery_wrap li:nth-child(9) {
+  grid-area: i;
+}
+
+/* 반응형 대응 */
+@media (max-width: 1024px) {
+  .gallery_sec .gallery_wrap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c d"
+      "e e"
+      "f g"
+      "h i";
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery_sec .gallery_wrap {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i";
+  }
+}
+
+.hole .hole_bg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 500px;
+  padding: 100px;
+}
+
+/* 일반 pc */
+@media screen and (max-width: 1280px) {
+}
+
+/* 테블릿 */
+@media screen and (max-width: 1024px) {
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width: 768px) {
+}
+
+/* 모바일 */
+@media screen and (max-width: 640px) {
+}
